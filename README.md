@@ -3,7 +3,7 @@
 ##  Dataset
 Following the instruction, I am using the dataset [2000 to 2010 Census Tract Population Change](https://www.census.gov/data/tables/time-series/dec/metro-micro/tract-change-00-10.html). Please execute the 'run.sh' file in the main directory. The code is written in Python 3. As indicated in the instruction, we are allowed to use I/O libraries, so I use only 'sys' and 'csv' libraries. If these are not allowed please let me know. 
 
-## Details about how I calculate the average population percent change for census tracts in this Core Based Statistical Area?
+## Details about how I calculate the average population percent change for census tracts in this Core Based Statistical Area
 
 The average population percent change is defined as 1/N(\sum_i (POP10- POP00)/POP00) for all rows (i) that have the same Core Based Statistical Area Code (i.e. CBSA09), where N is the sum of all selected rows. However, I exclude the cases with POP00 equal to zero, since it would cause the divergence. But when calculating total population in the CBSA in 2000 and 2010 I include all the data including rows with POP00 equal to zero.
 
