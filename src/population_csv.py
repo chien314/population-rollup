@@ -37,8 +37,5 @@ for key,val in freq.items():
     res.append([key,val[2][0],val[0],tot_pop_00,tot_pop_10,round(avg*100,2)])
 
 with open(sys.argv[2], 'w') as f: 
-    for i in range(len(res)):
-        for j in range(len(res[i])-1):           
-            f.write(str(res[i][j])+',') 
-        f.write(str(res[i][len(res[i])-1]))     
-        f.write('\n')  
+    csvwriter = csv.writer(f) 
+    csvwriter.writerows(res)
