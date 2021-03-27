@@ -1,7 +1,7 @@
 # population-rollup
  
 ##  Dataset
-Following the instruction, I am using the dataset [2000 to 2010 Census Tract Population Change](https://www.census.gov/data/tables/time-series/dec/metro-micro/tract-change-00-10.html). Please execute the 'run.sh' file in the main directory. The code is written in Python 3. As indicated in the instruction, we are allowed to use I/O libraries, so I use only 'sys' and 'csv' libraries. If these are not allowed please let me know. 
+The dataset used for this analysis can be found here: [2000 to 2010 Census Tract Population Change](https://www.census.gov/data/tables/time-series/dec/metro-micro/tract-change-00-10.html). Please execute the 'run.sh' file in the main directory. The code is written in Python 3. 
 
 ## Details about how I calculate the average population percent change for census tracts in this Core Based Statistical Area
 
